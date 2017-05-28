@@ -4,9 +4,6 @@ Keep a limit to how far the program will go.*/
 
 $(function() {
 
-  // var n = parseInt(prompt('Decimals?'))
-  // n = parseInt(n)
-  // $(".result").html(Math.PI.toFixed(n))
 
   $("#button").click(function(){
       var n = $("#decimal").val();
