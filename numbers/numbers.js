@@ -49,9 +49,28 @@ var sequence = [0,1]
     return factors
   }
 
-$("#button4").click(function() {
-  var n = parseInt($("#number").val())
-  $(".result4").html("Answer: " + factor(n))
+  $("#button4").click(function() {
+    var n = parseInt($("#number").val())
+    $(".result4").html("Answer: " + factor(n))
+  })
+
+
+/* 5. Next Prime Number -
+    Have the program find prime numbers until the user chooses
+    to stop asking for the next one. */
+
+  $("#button5").click(function() {
+    var count = 1;
+    var n = parseInt($("#next").val())
+    $(".result5").html("Answer: " + factor(n)[0])
+
+
+  $("#button5next").click(function() {
+      count = count +1
+      console.log(count)
+    $(".result5").html("Answer: " + factor(n).slice(0,count))
+
+  })
 })
 
 
